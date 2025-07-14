@@ -7,6 +7,7 @@ import Experiences from "./sections/Experiences";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import TechSkills from "./sections/TechSkills";
+import Respons from "./sections/Respons";
 const App = () => {
   return (
     <div className="container mx-auto max-w-7xl">
@@ -16,6 +17,7 @@ const App = () => {
       <TechSkills />
       <Projects />
       <Experiences />
+      <Respons />
       <Contact />
       <Footer />
     </div> 
