@@ -1,28 +1,28 @@
 const Respons = () => {
-  const currentRole = 
-  {
-    title: "Council Member",
-    company: "Technical Council IIT Gandhinagar",
-    duration: "May 2025 - Present",
-    location: "Remote",
-    responsibilities: [
-      "Contribute ideas and support for building internal tools or platforms for campus-wide use (portals, websites, automation tools).",
-      "Plan and execute college-level tech events, including coding competitions, hardware hackathons, and innovation challenges.",
-      "Guide and assist student-led tech clubs (e.g., MeanMechanics, ML CLub, Metis) in organizing sessions, workshops, and competitions."
-    ]
-  },
-  {
-    title: "Council Member",
-    company: "Industrial Relations and Projects (IR&P) council, IIT Gandhinagar",
-    duration: "June 2025 - Present",
-    location: "Remote",
-    responsibilities: [
-      "Serve as a bridge between students and industries to promote collaborative projects, internships, and live problem-solving engagements.",
-      "Reach out to companies, startups, and research labs for potential collaborations and partnerships with IITGN.",
-      "Help bring in interdisciplinary and technical projects from external organizations for student participation under faculty mentorship."
-    ]
-  };
-
+  const currentRoles = [ // Changed from currentRole to currentRoles (plural) and wrapped in array brackets
+    {
+      title: "Council Member",
+      company: "Technical Council IIT Gandhinagar",
+      duration: "May 2025 - Present",
+      location: "Remote",
+      responsibilities: [
+        "Contribute ideas and support for building internal tools or platforms for campus-wide use (portals, websites, automation tools).",
+        "Plan and execute college-level tech events, including coding competitions, hardware hackathons, and innovation challenges.",
+        "Guide and assist student-led tech clubs (e.g., MeanMechanics, ML CLub, Metis) in organizing sessions, workshops, and competitions."
+      ]
+    },
+    {
+      title: "Council Member",
+      company: "Industrial Relations and Projects (IR&P) council, IIT Gandhinagar",
+      duration: "June 2025 - Present",
+      location: "Remote",
+      responsibilities: [
+        "Serve as a bridge between students and industries to promote collaborative projects, internships, and live problem-solving engagements.",
+        "Reach out to companies, startups, and research labs for potential collaborations and partnerships with IITGN.",
+        "Help bring in interdisciplinary and technical projects from external organizations for student participation under faculty mentorship."
+      ]
+    }
+  ]; 
   const previousRoles = [
     {
       title: "Sponsorship Executive",
