@@ -101,7 +101,10 @@ const Respons = () => {
               What I'm working on right now
             </p>
           </div>
-          <RoleCard role={currentRole} isCurrent={true} />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8"> 
+            {/* Added grid for multiple cards */}
+            {currentRoles.map((role, index) => (<RoleCard key={index} role={role} isCurrent={true} />))}
+          </div>
         </div>
 
         <div>
