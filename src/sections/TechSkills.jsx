@@ -1,14 +1,48 @@
 import React from 'react';
 
+// Icon components
+const GlobeIcon = () => (
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
+  </svg>
+);
+
+const ServerIcon = () => (
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12l4-4m-4 4l4 4"/>
+  </svg>
+);
+
+const CodeIcon = () => (
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+  </svg>
+);
+
+const BriefcaseIcon = () => (
+  <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6"/>
+  </svg>
+);
+
+const CalendarIcon = () => (
+  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3a2 2 0 012-2h4a2 2 0 012 2v4m-6 0V6a2 2 0 012-2h4a2 2 0 012 2v1M8 7h8m-8 0H6a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V9a2 2 0 00-2-2h-2"/>
+  </svg>
+);
+
+const MapPinIcon = () => (
+  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+  </svg>
+);
+
 const TechStackSection = () => {
   const techCategories = [
     {
       title: "Frontend",
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
-        </svg>
-      ),
+      icon: <GlobeIcon />,
       skills: [
         { name: "React.js", level: 90, color: "bg-blue-500" },
         { name: "JavaScript", level: 85, color: "bg-yellow-500" },
@@ -20,11 +54,7 @@ const TechStackSection = () => {
     },
     {
       title: "Backend",
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12l4-4m-4 4l4 4"/>
-        </svg>
-      ),
+      icon: <ServerIcon />,
       skills: [
         { name: "Node.js", level: 80, color: "bg-green-600" },
         { name: "Express.js", level: 85, color: "bg-gray-700" },
@@ -35,11 +65,7 @@ const TechStackSection = () => {
     },
     {
       title: "Tools & Others",
-      icon: (
-        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-        </svg>
-      ),
+      icon: <CodeIcon />,
       skills: [
         { name: "Git/GitHub", level: 85, color: "bg-gray-800" },
         { name: "Docker", level: 70, color: "bg-blue-500" },
@@ -83,7 +109,7 @@ const TechStackSection = () => {
                       <div 
                         className={`h-2 rounded-full ${skill.color} transition-all duration-1000 ease-out`}
                         style={{ width: `${skill.level}%` }}
-                      ></div>
+                      />
                     </div>
                   </div>
                 ))}
