@@ -38,7 +38,7 @@ const MapPinIcon = () => (
   </svg>
 );
 
-const TechStackSection = () => {
+const TechSkills = () => {
   const techCategories = [
     {
       title: "Frontend",
@@ -121,3 +121,5 @@ const TechStackSection = () => {
     </section>
   );
 };
+
+export default TechSkills;
