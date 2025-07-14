@@ -1,11 +1,14 @@
 import React from 'react';
-import { Code, Database, Globe, Smartphone, Server, Brain, Briefcase, Calendar, MapPin, ExternalLink } from 'lucide-react';
 
 const TechStackSection = () => {
   const techCategories = [
     {
       title: "Frontend",
-      icon: <Globe className="w-6 h-6" />,
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
+        </svg>
+      ),
       skills: [
         { name: "React.js", level: 90, color: "bg-blue-500" },
         { name: "JavaScript", level: 85, color: "bg-yellow-500" },
@@ -17,7 +20,11 @@ const TechStackSection = () => {
     },
     {
       title: "Backend",
-      icon: <Server className="w-6 h-6" />,
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12l4-4m-4 4l4 4"/>
+        </svg>
+      ),
       skills: [
         { name: "Node.js", level: 80, color: "bg-green-600" },
         { name: "Express.js", level: 85, color: "bg-gray-700" },
@@ -28,7 +35,11 @@ const TechStackSection = () => {
     },
     {
       title: "Tools & Others",
-      icon: <Code className="w-6 h-6" />,
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+        </svg>
+      ),
       skills: [
         { name: "Git/GitHub", level: 85, color: "bg-gray-800" },
         { name: "Docker", level: 70, color: "bg-blue-500" },
