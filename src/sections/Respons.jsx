@@ -125,7 +125,7 @@ const Respons = () => {
   );
 
   return (
-    <section className="py-20 bg-black">
+    <section className="py-20 bg-black" id = "POR">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <div className="text-left mb-12">
