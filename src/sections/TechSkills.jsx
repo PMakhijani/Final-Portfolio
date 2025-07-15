@@ -41,37 +41,36 @@ const MapPinIcon = () => (
 const TechSkills = () => {
   const techCategories = [
     {
-      title: "Frontend",
+      title: "WebDev",
       icon: <GlobeIcon />,
       skills: [
         { name: "React.js", level: 90, color: "bg-blue-500" },
         { name: "JavaScript", level: 85, color: "bg-yellow-500" },
-        { name: "TypeScript", level: 80, color: "bg-blue-600" },
-        { name: "HTML/CSS", level: 95, color: "bg-orange-500" },
+        { name: "HTML/CSS", level: 80, color: "bg-blue-600" },
+        { name: "Node.js", level: 75, color: "bg-orange-500" },
         { name: "Tailwind CSS", level: 90, color: "bg-cyan-500" },
-        { name: "Next.js", level: 75, color: "bg-gray-800" }
+        { name: "Next.js", level: 75, color: "bg-gray-600" }
       ]
     },
     {
-      title: "Backend",
+      title: "Languages",
       icon: <ServerIcon />,
       skills: [
-        { name: "Node.js", level: 80, color: "bg-green-600" },
-        { name: "Express.js", level: 85, color: "bg-gray-700" },
-        { name: "Python", level: 75, color: "bg-yellow-600" },
-        { name: "MongoDB", level: 70, color: "bg-green-500" },
-        { name: "PostgreSQL", level: 65, color: "bg-blue-700" }
+        { name: "Python", level: 80, color: "bg-green-600" },
+        { name: "C++", level: 85, color: "bg-blue-700" },
+        { name: "JavaScript", level: 75, color: "bg-yellow-600" },
+        { name: "Verilog", level: 70, color: "bg-green-500" },
+        { name: "Git/Github", level: 65, color: "bg-gray-700" }
       ]
     },
     {
-      title: "Tools & Others",
+      title: "Core Electrical",
       icon: <CodeIcon />,
       skills: [
-        { name: "Git/GitHub", level: 85, color: "bg-gray-800" },
-        { name: "Docker", level: 70, color: "bg-blue-500" },
-        { name: "AWS", level: 60, color: "bg-orange-600" },
-        { name: "Figma", level: 75, color: "bg-purple-500" },
-        { name: "Vite", level: 80, color: "bg-purple-600" }
+        { name: "Verilog", level: 85, color: "bg-purple-800" },
+        { name: "EasyEDA", level: 70, color: "bg-blue-500" },
+        { name: "Matlab", level: 60, color: "bg-orange-600" },
+        { name: "Simulink", level: 75, color: "bg-gray-500" }
       ]
     }
   ];
@@ -81,7 +80,7 @@ const TechSkills = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-left mb-16">
           <h2 className="text-heading">Tech Stack</h2>
-          <h3 className="subheading">
+          <h3 className="subheading text-neutral-300">
             Here are the technologies and tools I work with to bring ideas to life
           </h3>
         </div>
