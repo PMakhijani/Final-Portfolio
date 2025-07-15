@@ -81,9 +81,9 @@ const TechSkills = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-heading">Tech Stack</h2>
-          <p className="text-subheading">
+          <h3 className="subheading">
             Here are the technologies and tools I work with to bring ideas to life
-          </p>
+          </h3>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
