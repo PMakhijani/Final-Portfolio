@@ -6,13 +6,13 @@ const GlobeIcon = () => (
   </svg>
 ); 
 
-const ServerIcon = () => ( // <--- Correct syntax
+const ServerIcon = () => ( 
   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12l4-4m-4 4l4 4"/>
   </svg>
 );
 
-const BriefcaseIcon = () => ( // <--- Pay special attention to this one if it's line 4
+const BriefcaseIcon = () => ( 
   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0H8m8 0v2a2 2 0 01-2 2H10a2 2 0 01-2-2V6"/>
   </svg>
@@ -128,11 +128,11 @@ const Respons = () => {
     <section className="py-20 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
-          <div className="text-center mb-12">
+          <div className="text-left mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">Current Role</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <h3 className="text-xl text-gray-400 max-w-3xl mx-auto">
               What I'm working on right now
-            </p>
+            </h3>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8"> 
             {/* Added grid for multiple cards */}
@@ -141,11 +141,11 @@ const Respons = () => {
         </div>
 
         <div>
-          <div className="text-center mb-12">
+          <div className="text-left mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">Previous Experience</h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <h3 className="text-xl text-gray-400 max-w-3xl mx-auto">
               My journey and past roles that shaped my skills
-            </p>
+            </h3>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {previousRoles.map((role, index) => (
