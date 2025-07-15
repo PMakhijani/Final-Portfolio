@@ -40,6 +40,12 @@ function Navigation() {
             </li>
             <li className="nav-li">
                 <a 
+                href="#POR"
+                className="nav-link"
+                >Responsibilities</a>
+            </li>
+            <li className="nav-li">
+                <a 
                 href="#contact"
                 className="nav-link">Contact</a>
             </li>
