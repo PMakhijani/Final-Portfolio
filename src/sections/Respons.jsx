@@ -130,7 +130,7 @@ const Respons = () => {
         <div className="mb-16">
           <div className="text-left mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">Current Role</h2>
-            <h3 className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <h3 className="text-xl text-gray-400 max-w-3xl">
               What I'm working on right now
             </h3>
           </div>
@@ -143,7 +143,7 @@ const Respons = () => {
         <div>
           <div className="text-left mb-12">
             <h2 className="text-4xl font-bold text-white mb-4">Previous Experience</h2>
-            <h3 className="text-xl text-gray-400 max-w-3xl mx-auto">
+            <h3 className="text-xl text-gray-400 max-w-3xl ">
               My journey and past roles that shaped my skills
             </h3>
           </div>
