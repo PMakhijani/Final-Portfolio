@@ -21,6 +21,14 @@ function Navigation() {
             </li>
             <li className="nav-li">
                 <a 
+                href="#TechSkills"
+                className="nav-link"
+                >
+                    Tech Stack
+                </a>
+            </li>
+            <li className="nav-li">
+                <a 
                 href="#projects"
                 className="nav-link">Projects</a>
             </li>
