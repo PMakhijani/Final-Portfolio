@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://piyushmakhijani.vercel.app/sitemap.xml
