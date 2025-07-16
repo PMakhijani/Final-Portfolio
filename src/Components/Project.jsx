@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectDetails from "./ProjectDetails";
 
 const Project = ({
@@ -11,12 +11,31 @@ const Project = ({
   setPreview,
 }) => {
   const [isHidden, setIsHidden] = useState(false);
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+  useEffect(() => {
+    const checkIfTouch = () => {
+      if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
+        setIsTouchDevice(true);
+      }
+    };
+    checkIfTouch();
+  }, []);
+
+  const handleMouseEnter = () => {
+    if (!isTouchDevice) setPreview(image);
+  };
+
+  const handleMouseLeave = () => {
+    if (!isTouchDevice) setPreview(null);
+  };
+
   return (
     <>
       <div
         className="flex-wrap items-center justify-between py-10 space-y-14 sm:flex sm:space-y-0"
-        onMouseEnter={() => setPreview(image)}
-        onMouseLeave={() => setPreview(null)}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <div>
           <p className="text-2xl">{title}</p>
