@@ -18,7 +18,7 @@ const ParallaxBackground = () => {
             muted
             playsInline
             className="absolute inset-0 w-full h-screen object-cover -z-50">
-            <source src="https://res.cloudinary.com/do9fq5li1/video/upload/v1752678457/6754824-uhd_3840_2160_25fps_vwrc0t.mp4 type="video/mp4" />
+            <source src="https://res.cloudinary.com/do9fq5li1/video/upload/v1752678457/6754824-uhd_3840_2160_25fps_vwrc0t.mp4" type="video/mp4" />
             Your browser does not support the video tag.
         </video>
         </div>
