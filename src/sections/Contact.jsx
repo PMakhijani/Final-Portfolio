@@ -32,23 +32,18 @@ const ContactSection = () => {
               <span className="text-blue-300">Connect with me on LinkedIn</span>
             </a>
             <a
-              href="piyush.makhijani@iitgn.ac.in"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl flex items-center space-x-3 hover:scale-105 transition-transform"
-            >
-              <img src="/assets/socials/gmail.svg" alt="Facebook" className="w-11 h-11" />
-              <span className="text-neutral-400">piyush.makhijani@iitgn.ac.in</span>
+              href="tel:+918408908090"
+              className="text-2xl flex items-center space-x-3 hover:scale-105 transition-transform">
+              <img src="/assets/socials/whatsapp.svg" alt="WhatsApp" className="w-11 h-11" />
+              <span className="text-green-400">+91 8408908090</span>
             </a>
-            <a
-              href=""
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl flex items-center space-x-3 hover:scale-105 transition-transform"
-            >
-              <img src="/assets/socials/whatsapp.svg" alt="whatsapp" className="w-11 h-11" />
-              <span className="text-green-400">+91 8408908090 </span>
-            </a>
+             <a
+               href="mailto:piyush.makhijani@iitgn.ac.in"
+               className="text-2xl flex items-center space-x-3 hover:scale-105 transition-transform"
+               >
+               <img src="/assets/socials/gmail.svg" alt="Email" className="w-11 h-11" />
+               <span className="text-neutral-400">piyush.makhijani@iitgn.ac.in</span>
+             </a>
           </div>
         </div>
 
@@ -68,3 +63,4 @@ const ContactSection = () => {
 };
 
 export default ContactSection;
+
